@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eae9e5;
+    padding: 20px;
+
+}
+
+.card {
+    flex: 0 0 calc(25% - 20px);
+    background-color: rgba(158, 155, 145, 0.3);
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.card h3 {
+    font-family: 'Acme', sans-serif;
+    color: #797156;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.card p {
+    font-family: 'Caveat', cursive;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.btn {
+    font-family: 'Acme', sans-serif;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #676252;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4e4a3f;
+}
+
+
+/* Large devices (>= 1200px) */
+@media (max-width: 1200px) {
+    .card {
+        flex: 0 0 calc(33.33% - 20px);
+    }
+}
+
+/* Medium devices (>= 768px and < 1200px) */
+@media (max-width: 1200px) {
+    .card {
+        flex: 0 0 calc(50% - 100px);
+    }
+}
+
+/* Small devices (<= 767px) */
+@media (max-width: 767px) {
+    .card {
+        flex: 0 0 calc(100% - 100px);
+    }
+
+    .card-container {
+        padding: 10px;
+    }
+}
+
+/* Extra Small devices (<= 360px) */
+@media (max-width: 360px) {
+    .card {
+        flex: 0 0 calc(100% - 100px);
+    }
+
+    .card-container {
+        padding: 10px;
+    }
+}
